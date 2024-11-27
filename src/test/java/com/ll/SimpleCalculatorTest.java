@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SimpleCalculatorTest {
-    @Test
+    @Test //테스트케이스 1개 만듦
     @DisplayName("1+2=3")
     public void testPlus(){
         SimpleCalculator simpleCalculator=new SimpleCalculator();
