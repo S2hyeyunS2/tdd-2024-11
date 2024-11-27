@@ -22,4 +22,13 @@ public class SimpleCalculatorTest {
 
         Assertions.assertEquals(12,rs);
     }
+
+    @Test //테스트케이스 3개 만듦
+    @DisplayName("20+10=30")
+    public void t3(){
+        SimpleCalculator simpleCalculator=new SimpleCalculator();
+        int rs=simpleCalculator.plus(20,10);
+
+        Assertions.assertEquals(30,rs);
+    }
 }
