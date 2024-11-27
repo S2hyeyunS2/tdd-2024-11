@@ -1,8 +1,9 @@
 package com.ll;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class SimpleCalculatorTest {
     @Test //테스트케이스 1개 만듦
@@ -11,7 +12,7 @@ public class SimpleCalculatorTest {
         SimpleCalculator simpleCalculator=new SimpleCalculator();
         int rs=simpleCalculator.plus(1,2);
 
-        Assertions.assertEquals(3,rs);
+        assertThat(rs).isEqualTo(3);
     }
 
     @Test //테스트케이스 2개 만듦
@@ -20,7 +21,7 @@ public class SimpleCalculatorTest {
         SimpleCalculator simpleCalculator=new SimpleCalculator();
         int rs=simpleCalculator.plus(2,10);
 
-        Assertions.assertEquals(12,rs);
+        assertThat(rs).isEqualTo(12);
     }
 
     @Test //테스트케이스 3개 만듦
@@ -29,6 +30,6 @@ public class SimpleCalculatorTest {
         SimpleCalculator simpleCalculator=new SimpleCalculator();
         int rs=simpleCalculator.plus(20,10);
 
-        Assertions.assertEquals(30,rs);
+        assertThat(rs).isEqualTo(30);
     }
 }
